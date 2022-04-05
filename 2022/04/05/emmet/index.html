@@ -3,12 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>一位咸鱼的blog</title>
+  <title>Emmet语法 | 一位咸鱼的blog</title>
   <meta name="author" content="fishmkkk">
+  
+  <meta name="description" content="快速生成html标签div*3
+123&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;
+ul&amp;gt;li
+123&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;
+di">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="Emmet语法"/>
   <meta property="og:site_name" content="一位咸鱼的blog"/>
 
   
@@ -46,67 +52,7 @@
 <div class="clearfix"></div>
 </header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-  <article id="post-cssdisplay" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time class="dt-published" datetime="2022-04-05T15:48:29.000Z"><a href="/2022/04/05/cssdisplay/">2022-04-05</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2022/04/05/cssdisplay/">CSS 布局 - display 属性</a></h1>
-  
-
-    </header>
-    <div class="e-content entry" itemprop="articleBody">
-      
-        <h2 id="块级元素"><a href="#块级元素" class="headerlink" title="块级元素"></a>块级元素</h2><p>常见的块级元素h1~h6、p、div、ul、ol、li</p>
-<p>特点</p>
-<ul>
-<li>独占一行</li>
-<li>有高度、宽度、内外边距</li>
-<li>宽度默认是父级宽度的100%</li>
-<li>里面可以放行内或者块级元素</li>
-</ul>
-<h2 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h2><p>a、strong、span、b、em、i、u等都是常见的行内元素</p>
-<p>特点</p>
-<ul>
-<li>一行可以放多个</li>
-<li>没有高宽</li>
-<li>默认宽度是内容宽度</li>
-<li>只能容纳文本或其他行内元素</li>
-</ul>
-<h2 id="行内块元素"><a href="#行内块元素" class="headerlink" title="行内块元素"></a>行内块元素</h2><p>img、input、td等</p>
-<p>特点</p>
-<ul>
-<li>和相邻元素在一行，一行可以放多个</li>
-<li>默认宽度是内容宽度</li>
-<li>可以设置高度、宽度，内外边距</li>
-</ul>
-<h2 id="修改它们的默认属性"><a href="#修改它们的默认属性" class="headerlink" title="修改它们的默认属性"></a>修改它们的默认属性</h2><p>一个常见的例子是为实现水平菜单而生成行内的 li元素</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">li</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: inline;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p> a元素显示为块元素<br> <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> <span class="selector-tag">a</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br><strong>注意</strong>：设置元素的 display 属性仅会更改元素的显示方式，而不会更改元素的种类。因此，带有 display: block; 的行内元素不允许在其中包含其他块元素。</p>
-<p>span元素转换为行内块元素</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">span</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: inline-block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article id="post-emmet" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-emmet" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
   <div class="post-content">
     <header>
@@ -116,7 +62,7 @@
       
       
   
-    <h1 class="title"><a href="/2022/04/05/emmet/">Emmet语法</a></h1>
+    <h1 class="p-name title" itemprop="headline name">Emmet语法</h1>
   
 
     </header>
@@ -142,38 +88,6 @@
       
         
         
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article id="post-newpapername" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time class="dt-published" datetime="2022-04-03T07:37:39.000Z"><a href="/2022/04/03/newpapername/">2022-04-03</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2022/04/03/newpapername/">暂时先这样</a></h1>
-  
-
-    </header>
-    <div class="e-content entry" itemprop="articleBody">
-      
-        <p>我超，蓝桥杯这么快要来了，只能是寄了</p>
-
-      
-    </div>
-    <footer>
-      
-        
         
       
       <div class="clearfix"></div>
@@ -182,14 +96,27 @@
 </article>
 
 
+<section id="comment">
+  <h1 class="title">留言</h1>
 
-
-
-<nav id="pagination">
   
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://example.com/2022/04/05/emmet/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
   
-  <div class="clearfix"></div>
-</nav></div></div>
+</section>
+
+</div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
